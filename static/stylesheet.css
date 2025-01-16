@@ -1,0 +1,190 @@
+/* To change qualities of tags directly */
+body {
+    margin: 1%;
+}
+
+input::placeholder {
+    padding-left: 10px; 
+    color: #202030;
+}
+
+/* Login Page */
+.identity-container {
+    position: relative;
+
+    width: 250px;
+    height: 100px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.logo {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+
+    color: black
+}
+
+.logo-text {
+    position: relative;
+
+    margin-left: 15px;
+
+    font-size: 44px;
+    font-family: "Indie Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #202030;
+}
+
+.login-container {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+
+    background-color: #DBE4E1;
+
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.login-text {
+    position: absolute;
+
+    margin-top: 185px;
+    
+    font-size: 40px;
+    color: #202030;
+    font-family: serif
+}
+
+.login {
+    position: relative;
+
+    margin-top: 250px;
+    height: 300px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #728395;
+    border-radius: 15px;
+}
+
+.login-input {
+    position: relative;
+
+    margin-top: 5%;
+    
+    width: 60%;
+    height: 12%;
+    border-radius: 15px;
+    border: none;
+    background-color: #EFEFEF;
+}
+
+.login-button {
+    position: relative;
+
+    margin-top: 5%;
+
+    width: 30%;
+    height: 12%;
+    border-radius: 20px;
+    border: none;
+    background-color: #05D599;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #00A676;
+}
+
+.seperator {
+    position: relative;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    width: 80%;
+    height: 1px;
+    background-color: lightgrey;
+}
+
+.forgotten-button {
+    position: absolute;
+
+    top: 495px;
+    color: blue
+}
+
+.sign-up-advert {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    background-color: #728395;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    body {
+        margin: 1%;
+        
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /* Login Page */
+    .identity-container {
+        position: relative;
+
+        width: 250px;
+        height: 100px;
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+
+        z-index: 1;
+    }
+
+    .logo {
+        position: relative;
+    
+        width: 100px;
+        height: 100px;
+    
+        color: black
+    }
+    
+    .logo-text {
+        position: relative;
+    
+        margin-left: 15px;
+    
+        font-size: 44px;
+        font-family: "Indie Flower", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
