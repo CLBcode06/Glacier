@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Redirecting</title>
+        <script src="static/javascript.js"></script>
+    </head>
+
+    <body>
+        <!-- Used to automatically put the user on the Home Page; if it fails to there is a link which would perform this action -->
+        <meta http-equiv="refresh" content="0;url=/login"> 
+        <p>Page not Redirecting: <a href="#" onclick="navigateToPage('/homePage'); return false;">Click Here</a></p> 
+    
+        <!-- Javascript used within HTML page as it isn't needed elsewhere -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let titles = ['Redirecting.', 'Redirecting..', 'Redirecting...'];
+                let index = 0;
+                setInterval(function() {
+                    document.title = titles[index];
+                    index = (index + 1) % titles.length; 
+                }, 1000);
+            });
+        </script>
+    </body>
+</html>
