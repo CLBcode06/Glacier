@@ -82,6 +82,7 @@ input::placeholder {
 
     background-color: #728395;
     border-radius: 15px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
 .login-input {
@@ -95,6 +96,7 @@ input::placeholder {
     border-radius: 15px;
     border: none;
     background-color: #EFEFEF;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
 .login-button {
@@ -109,7 +111,7 @@ input::placeholder {
     background-color: #05D599;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
@@ -135,7 +137,7 @@ input::placeholder {
     color: blue
 }
 
-.sign-up-advert {
+.sign-up-container {
     position: absolute;
 
     top: 0;
@@ -143,10 +145,32 @@ input::placeholder {
     height: 100%;
     width: 40%;
     background-color: #728395;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up {
+    position: relative;
+
+    height: 420px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #DBE4E1;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Resolutions below */
-@media (max-width: 830px) {
+@media (max-width: 1300px) {
     body {
         margin: 1%;
 
@@ -171,7 +195,7 @@ input::placeholder {
         margin-top: 30px;
     }
 
-    .sign-up-advert {
+    .sign-up-container {
         display: none;
     }
 }
