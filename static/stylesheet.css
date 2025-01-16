@@ -4,7 +4,6 @@ body {
 }
 
 input::placeholder {
-    padding-left: 10px; 
     color: #202030;
 }
 
@@ -56,23 +55,23 @@ input::placeholder {
     display: flex;
     align-content: center;
     text-align: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.login-text {
-    position: absolute;
+.login-container .login-text {
+    position: relative;
 
-    margin-top: 185px;
+    margin-top: 170px;
     
     font-size: 40px;
     color: #202030;
     font-family: serif
 }
 
-.login {
+.login-container .login {
     position: relative;
 
-    margin-top: 250px;
     height: 300px;
     width: 500px;
 
@@ -88,6 +87,7 @@ input::placeholder {
     position: relative;
 
     margin-top: 5%;
+    padding-left: 10px;
     
     width: 60%;
     height: 12%;
@@ -127,10 +127,10 @@ input::placeholder {
     background-color: lightgrey;
 }
 
-.forgotten-button {
-    position: absolute;
+.login-container .login .forgotten-button {
+    position: relative;
 
-    top: 495px;
+    margin-top: 1.5%;
     color: blue
 }
 
@@ -144,14 +144,48 @@ input::placeholder {
     background-color: #728395;
 }
 
-/* Mobile Styles */
-@media (max-width: 600px) {
+/* Resolutions below */
+@media (max-width: 830px) {
     body {
         margin: 1%;
-        
+
+        background-color: #728395;
         display: flex;
         align-content: center;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-container {
+        position: relative;
+        
+        margin-top: 120px;
+        width: 80%;
+        height: 50%;
+        border-radius: 15px;
+    }
+
+    .login-container .login-text {
+        margin-top: 30px;
+    }
+
+    .sign-up-advert {
+        display: none;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 665px) {
+    body {
+        margin: 1%;
+
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
     }
 
     /* Login Page */
@@ -164,27 +198,48 @@ input::placeholder {
         display: flex;
         align-content: center;
         align-items: center;
+        margin-top: 5%;
 
         z-index: 1;
     }
 
-    .logo {
-        position: relative;
-    
-        width: 100px;
-        height: 100px;
-    
-        color: black
+    .login-container {
+        height: 68%;
+        margin-top: 15%;
     }
-    
-    .logo-text {
-        position: relative;
-    
-        margin-left: 15px;
-    
-        font-size: 44px;
-        font-family: "Indie Flower", serif;
-        font-weight: 400;
-        font-style: normal;
+
+    .login-container .login {
+        width: 80%;
+    }
+
+    .login-input {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .login-container .login .forgotten-button {
+        margin-top: 1.5%;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 360px) {
+    .login-input {
+        font-size: 9px;
+    }
+
+    .login-container .login .forgotten-button {
+        margin-top: 14%;
+    }
+}
+
+/* Non Mobile Styles*/
+@media (min-width: 360px) {
+    .login-input {
+        font-size: 12px;
+    }
+
+    .login-container .login .forgotten-button {
+        margin-top: 1.5%;
     }
 }
