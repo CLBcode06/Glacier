@@ -31,16 +31,24 @@
         <section class="sign-up-container">   
             <h1 class="login-text" style="font-size: 40px;">New User?</h1>
 
-            <form class="sign-up" action="">
-                <input class="login-input" type="text" placeholder="Enter Your First Name">
-                <input class="login-input" type="text" placeholder="Enter Your Last Name">
-                <input class="login-input" type="text" placeholder="Enter Your Password">
-                <input class="login-input" type="text" placeholder="Confirm Password">
-                <input class="login-input" type="text" placeholder="Enter Your Email">
+            <!-- User Submission to Create an Account -->
+            <form class="sign-up" onsubmit="return verify_signup(event);">
+                <input id="name" class="login-input" type="text" placeholder="Enter Your Name">
+                <input id="username" class="login-input" type="text" placeholder="Enter a Username">
+                <input id="password" class="login-input" type="text" placeholder="Enter Your Password">
+                <input id="verify-pass" class="login-input" type="text" placeholder="Confirm Password">
+                <input id="email" class="login-input" type="text" placeholder="Enter Your Email">
                 <br>
 
-                <button class="login-button" style="margin-bottom: 15px; margin-top: 0;">Sign-Up</button>
+                <button class="login-button" style="margin-bottom: 10px; margin-top: 5px;">Sign-Up</button>
             </form>
+
+            <!-- Errors -->
+            <p id="name-error" class="error" style="top: 39%;"></p>
+            <p id="username-error" class="error" style="top: 46.25%;"></p>
+            <p id="password-error" class="error" style="top: 53.5%;"></p>
+            <p id="verify-pass-error" class="error" style="top: 60.75%;"></p>
+            <p id="email-error" class="error" style="top: 68%;"></p>
         </section>
     </body>
 </html>

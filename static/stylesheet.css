@@ -169,6 +169,12 @@ input::placeholder {
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
+.error {
+    position: absolute;
+
+    color: red;
+}
+
 /* Resolutions below */
 @media (max-width: 1300px) {
     body {
@@ -251,7 +257,7 @@ input::placeholder {
 /* Mobile Styles */
 @media (max-width: 360px) {
     .login-input {
-        font-size: 9px;
+        font-size: 14px;
     }
 
     .login-container .login .forgotten-button {
@@ -262,7 +268,7 @@ input::placeholder {
 /* Non Mobile Styles*/
 @media (max-width: 300px) {
     .login-input {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .login-button {
